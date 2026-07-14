@@ -19,7 +19,8 @@ function AdminApplications() {
           },
         }
       );
-
+      console.log(response.data);
+      
       setApplications(response.data);
 
     } catch (error) {

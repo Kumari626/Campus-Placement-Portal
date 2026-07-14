@@ -16,9 +16,7 @@ const app = express();
 
 
 // Middleware
-app.use(cors({
-  origin: "https://campus-placement-portal-frontend-w8qz.onrender.com"
-}));
+app.use(cors());
 
 app.use(express.json());
 

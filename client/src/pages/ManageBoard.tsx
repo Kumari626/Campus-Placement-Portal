@@ -14,7 +14,7 @@ function ManageBoard() {
 
   const getJobs = async () => {
     try {
-      const response = await api.get("/jobs");
+      const response = await api.get("/api/jobs");
       setJobs(response.data);
     } catch (error) {
       console.log(error);
@@ -25,7 +25,7 @@ function ManageBoard() {
   const deleteJob = async (id: string) => {
     try {
 
-      await api.delete(`/jobs/${id}`);
+      await api.delete(`/api/jobs/${id}`);
 
       setJobs(
         jobs.filter((job) => job._id !== id)
@@ -44,7 +44,7 @@ function ManageBoard() {
     try {
 
       await api.put(
-        `/jobs/${editJob._id}`,
+        `/api/jobs/${editJob._id}`,
         editJob
       );
 

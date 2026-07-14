@@ -12,7 +12,7 @@ function AdminApplications() {
     try {
 
       const response = await api.get(
-        "/applications/all",
+        "/api/applications/all",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -39,7 +39,7 @@ function AdminApplications() {
     try {
 
       await api.put(
-        `/applications/${id}`,
+        `/api/applications/${id}`,
         { status },
         {
           headers: {

@@ -18,7 +18,7 @@ function Profile() {
         const token = localStorage.getItem("token");
 
         const response = await api.get(
-          "/auth/profile",
+          "/api/auth/profile",
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -63,7 +63,7 @@ function Profile() {
       formData.append("resume", resume);
 
       const response = await api.post(
-        "/auth/upload-resume",
+        "/api/auth/upload-resume",
         formData,
         {
           headers: {

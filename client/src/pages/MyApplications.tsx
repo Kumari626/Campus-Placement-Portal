@@ -26,7 +26,7 @@ function MyApplications() {
 
         const response = await api.get(
 
-          "/applications/my",
+          "/api/applications/my",
 
           {
 

@@ -20,7 +20,7 @@ function ForgotPassword() {
     try {
 
       const response = await api.put(
-        "/auth/forgot-password",
+        "/api/auth/forgot-password",
         {
           email,
           password,

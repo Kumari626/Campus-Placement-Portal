@@ -23,7 +23,7 @@ function AdminDashboard() {
         const token = localStorage.getItem("token");
 
         const response = await api.get(
-          "/admin/statistics",
+          "/api/admin/statistics",
           {
             headers: {
               Authorization: `Bearer ${token}`,

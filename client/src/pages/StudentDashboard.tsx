@@ -46,7 +46,7 @@ function StudentDashboard() {
 
     try {
 
-      const res = await api.get("/jobs");
+      const res = await api.get("/api/jobs");
 
       setJobs(res.data);
 
@@ -83,7 +83,7 @@ const getAppliedJobs = async () => {
 
     const response = await api.get(
 
-      "/applications/my",
+      "/api/applications/my",
 
       {
 
@@ -150,7 +150,7 @@ const getAppliedJobs = async () => {
 
 
       await api.post(
-        "/applications",
+        "/api/applications",
         {
           jobId,
         },

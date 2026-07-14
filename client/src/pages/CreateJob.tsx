@@ -28,7 +28,7 @@ function CreateJob() {
       const token = localStorage.getItem("token");
 
       const response = await api.post(
-        "/jobs",
+        "/api/jobs",
         job,
         {
           headers: {

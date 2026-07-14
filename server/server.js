@@ -16,7 +16,9 @@ const app = express();
 
 
 // Middleware
-app.use(cors());
+app.use(cors({
+  origin: "https://campus-placement-portal-frontend-w8qz.onrender.com"
+}));
 app.use(express.json());
 
 // Resume files access
